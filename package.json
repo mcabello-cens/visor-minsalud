@@ -1,0 +1,29 @@
+{
+  "name": "visor_minsalud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcabello-cens/visor-minsalud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcabello-cens/visor-minsalud/issues"
+  },
+  "homepage": "https://github.com/mcabello-cens/visor-minsalud#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.1.3",
+    "fhirclient": "^2.4.0",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "particles.js": "^2.0.0",
+    "url-search-params-polyfill": "^8.1.1"
+  }
+}

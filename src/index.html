@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/src/css/index.css">
+
+	<title>ST (Demo)</title>
+</head>
+
+<body>
+
+	<div id="particles" class="particle-container">
+	</div>
+
+	<div id="app">
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">{{ $t("Title") }}</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul id="options" class="navbar-nav">
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="welcome">
+			<div class="display-4">Servicios Terminológicos en FHIR<sup>&reg</div>
+			<p class="lead">XXXXXXXXXX Implementación de Servicios Terminologicos mediante estandar HL7 FHIR</p>
+			<!--
+				<a href="locations.html" class="btn btn-lg btn-primary">Comenzar</a><br>
+			-->
+		</div>
+
+		<div class="logo">
+			<img src="assets/img/logotipo-cens.png" height="200">
+		</div>
+
+
+		<!-- Ventana modal para hacer login -->
+		<div id="myModal" class="modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Acceso</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          						<span aria-hidden="true">&times;</span>
+        					</button>
+						</div>
+						<div class="modal-body">
+							<p>Login</p>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="email">{{ $t("login.Email") }}</label>
+								<div class="col-sm-10">
+									<input type="email" class="form-control" id="email" placeholder="Enter email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="pwd">{{ $t("login.Password") }}</label>
+								<div class="col-sm-10">
+									<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">{{ $t("login.DoLogin") }}</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/node_modules/url-search-params-polyfill/index.js"></script>
+	<script src="/node_modules/lodash/lodash.min.js"></script>
+	<script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
+	<script src="/node_modules/@popperjs/core/dist/cjs/popper.js"></script>
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/node_modules/fhirclient/build/fhir-client.min.js"></script>
+
+	<script src="lib/vue/vue.js"></script>
+	<script src="lib/vue-i18n/vue-i18n.js"></script>
+	<script src="lib/vue-select/vue-select.js"></script>
+	<script src="js/vue/vue-components.js"></script>
+
+	<script defer src="lib/fontawesome-free-5.0.3/svg-with-js/js/fontawesome-all.min.js"></script>
+	<!--
+	<script src="js/config/config.js"></script>
+	<script src="js/fhir/fhir-operations.js"></script>
+	-->
+	<script src="js/locale/locales.js"></script>
+	<script src="js/data/data.js"></script>
+
+	<script src="/node_modules/particles.js/particles.js"></script>
+	<script src="js/pages/index.js"></script>
+
+	<script type="text/javascript" src="/js/custom.js"></script>
+	<script type="text/javascript" src="/js/custom-general.js"></script>
+
+
+	</div>
+	
+</body>
+
+</html>
